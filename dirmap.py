@@ -18,7 +18,7 @@ from lib.core.common import banner, outputscreen, setPaths
 from lib.core.data import cmdLineOptions, conf, paths
 from lib.core.option import initOptions
 from lib.parse.cmdline import cmdLineParser
-
+from lib.parse.tools_xlsx import to_xlsx
 
 
 
@@ -43,6 +43,9 @@ def main():
 
     # run!
     run()
+
+    #result
+    to_xlsx()
 
 if __name__ == "__main__":
     main()
